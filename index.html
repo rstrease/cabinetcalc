@@ -39,20 +39,20 @@
                             </p>
                         </div>
                     </div>
-                    <div class="ui-block-b">
-                        <div style="text-align: center;">
-                            <img style="width: 80px; height: 120px" src="images/Mitered.png">
-                        </div>
-                        <div>
-                            <p style="text-align: center;">
-                                <span style="font-size: small;">
-                                    <b>
-                                        Mitered
-                                    </b>
-                                </span>
-                            </p>
-                        </div>
+                <div class="ui-block-b">
+                	<div style="text-align: center;">
+						<a href="#mitered" data-transition="slide"><img style="width: 80px; height: 120px" src="images/Mitered.png"></a>
                     </div>
+                	<div>
+                    	<p style="text-align: center;">
+                        	<span style="font-size: small;">
+                            	<b>
+                                	<a href="#mitered" data-transition="slide" style="text-decoration: none">Mitered</a>
+                            	</b>
+                        	</span>
+                    	</p>
+                	</div>
+            	</div>
                     <div class="ui-block-c">
                         <div style="text-align: center">
                             <img style="width: 80px; height: 120px" src="images/TwoPanelVertical.png">
@@ -146,7 +146,7 @@
         </div>
 <!-- Single Panel -->
 <div data-role="page" id="single">
-    <div data-theme="b" data-role="header">
+    <div data-theme="b" data-role="header" data-position="fixed">
         <h3>
             Single Panel
         </h3>
@@ -247,6 +247,102 @@
         </ul>
     </div>
 </div>
+
+<!-- Mitered -->
+<div data-role="page" id="mitered">
+    <div data-theme="b" data-role="header">
+        <h3>
+            Mitered
+        </h3>
+        <a data-role="button" data-direction="reverse" data-transition="slide"
+        href="#page1" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+            Back
+        </a>
+        <a data-role="button" data-transition="slide" href="#page4" data-icon="arrow-r"
+        data-iconpos="left" class="ui-btn-right">
+            Next
+        </a>
+    </div>
+    <div data-role="content">
+        <div>
+            <p style="text-align: center;">
+                <b>
+                    Rail and Stile Dimensions
+                    <br>
+                </b>
+            </p>
+        </div>
+        <div style=" text-align:center">
+            <img style="width: 100px; height: 161px" src="http://assets.codiqa.com/ps/33528/b36ab393cd3d047fMitered.png">
+        </div>
+        <form action="">
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput17">
+                        Rail(T)
+                    </label>
+                    <input name="" id="textinput17" placeholder="" value="2-1/4&quot;" type="text">
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput18">
+                        Stile(R)
+                    </label>
+                    <input name="" id="textinput18" placeholder="" value="2-1/4&quot;" type="text">
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput19">
+                        Rail(B)
+                    </label>
+                    <input name="" id="textinput19" placeholder="" value="2-1/4&quot;" type="text">
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput20">
+                        Stile(L)
+                    </label>
+                    <input name="" id="textinput20" placeholder="" value="2-1/4&quot;" type="text">
+                </fieldset>
+            </div>
+        </form>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a data-role="button" data-transition="none" href="#page3">
+                    Reset
+                </a>
+            </div>
+            <div class="ui-block-b">
+                <a data-role="button" data-transition="slide" data-theme="b" href="#page4"
+                data-icon="arrow-r" data-iconpos="right">
+                    Next
+                </a>
+            </div>
+        </div>
+    </div>
+    <div data-role="tabbar" data-iconpos="top" data-theme="b">
+        <ul>
+            <li>
+                <a href="#page1" data-theme="" data-transition="slide" data-icon="home">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#page4" data-theme="" data-transition="slide" data-icon="gear">
+                    Options
+                </a>
+            </li>
+            <li>
+                <a href="#" data-theme="" data-transition="slide" data-icon="plus">
+                    Calculate
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
 		
 <!-- SP Options -->
 <div data-role="page" id="page4">
@@ -254,7 +350,7 @@
         <h3>
             Options
         </h3>
-        <a data-role="button" data-direction="reverse" data-transition="slide" href="#single" data-icon="arrow-l"
+        <a data-role="button" data-direction="reverse" data-transition="slide" data-rel="back" data-icon="arrow-l"
         data-iconpos="left" class="ui-btn-left">
             Back
         </a>
@@ -415,7 +511,7 @@
                 </a>
             </li>
             <li>
-                <a href="#" data-transition="slide"data-theme="" data-icon="plus">
+                <a href="#" data-transition="slide" data-theme="" data-icon="plus">
                     Calculate
                 </a>
             </li>
