@@ -1,8 +1,534 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <head>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
+=======
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>iCabinetCalc</title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css"/>
+        <link rel="stylesheet" href="css/my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+        <script src="js/my.js"></script>
+    </head>
+    
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="b" data-role="header" data-position="fixed">
+                <h3>
+                    iCabinetCalc
+                </h3>
+            </div>
+            <div data-role="content" style="padding: 15px">
+                <div class="ui-grid-b">
+                    <div class="ui-block-a">
+                        <div style="text-align: center;">
+							<a href="#single" data-transition="slide"><img style="width: 80px; height: 120px" src="images/Single.png"></a>
+                        </div>
+                        <div>
+                            <p style="text-align: center;">
+                                <span style="font-size: small;">
+                                    <b>
+                                        <a href="#single" data-transition="slide" style="text-decoration: none">Single</a>
+                                    </b>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                <div class="ui-block-b">
+                	<div style="text-align: center;">
+						<a href="#mitered" data-transition="slide"><img style="width: 80px; height: 120px" src="images/Mitered.png"></a>
+                    </div>
+                	<div>
+                    	<p style="text-align: center;">
+                        	<span style="font-size: small;">
+                            	<b>
+                                	<a href="#mitered" data-transition="slide" style="text-decoration: none">Mitered</a>
+                            	</b>
+                        	</span>
+                    	</p>
+                	</div>
+            	</div>
+                    <div class="ui-block-c">
+                        <div style="text-align: center">
+                            <img style="width: 80px; height: 120px" src="images/TwoPanelVertical.png">
+                        </div>
+                        <div>
+                            <p style="text-align: center;">
+                                <b>
+                                    <span style="font-size: small;">
+                                        Two-Panel Vertical
+                                    </span>
+                                    <br>
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ui-block-a">
+                        <div style="text-align: center;">
+                            <img style="width: 80px; height: 120px" src="images/twoPanelHorizontal.png">
+                        </div>
+                        <div>
+                            <p style="text-align: center;">
+                                <span style="font-size: small;">
+                                    <b>
+                                        Two-Panel Horizontal
+                                    </b>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div style="text-align: center;">
+                            <img style="width: 80px; height: 120px" src="images/threePanel.png">
+                        </div>
+                        <div>
+                            <p style="text-align: center;">
+                                <span style="font-size: small;">
+                                    <b>
+                                        Three-Panel
+                                    </b>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ui-block-c">
+                        <div style="text-align: center;">
+                            <img style="width: 80px; height: 120px" src="images/fourPanel.png">
+                        </div>
+                        <div>
+                            <p style="text-align: center;">
+                                <span style="font-size: small;">
+                                    <b>
+                                        Four-Panel
+                                    </b>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ui-block-a">
+                        <div style="text-align: center;">
+                            <img style="width: 80px; height: 120px" src="images/arched.png">
+                        </div>
+                        <div>
+                            <p style="text-align: center;">
+                                <span style="font-size: small;">
+                                    <b>
+                                        Arched
+                                    </b>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div style="text-align: center;">
+                            <img style="width: 80px; height: 120px" src="images/cathedral.png">
+                        </div>
+                        <div>
+                            <p style="text-align: center;">
+                                <span style="font-size: small;">
+                                    <b>
+                                        Cathedral
+                                    </b>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ui-block-c">
+                    </div>
+                </div>
+            </div>
+			
+        </div>
+<!-- Single Panel -->
+<div data-role="page" id="single">
+    <div data-theme="b" data-role="header" data-position="fixed">
+        <h3>
+            Single Panel
+        </h3>
+        <a data-role="button" data-direction="reverse" data-transition="slide"
+        href="#page1" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+            Back
+        </a>
+        <a data-role="button" data-transition="slide" href="#page4" data-icon="arrow-r"
+        data-iconpos="left" class="ui-btn-right">
+            Next
+        </a>
+    </div>
+    <div data-role="content" style="padding: 15px">
+        <div>
+            <p style="text-align: center;">
+                <b>
+                    Rail and Stile Dimensions
+                    <br>
+                </b>
+            </p>
+        </div>
+        <div style=" text-align:center">
+            <img style="width: 220px; height: 228px" src="images/SingleCalc.png">
+        </div>
+        <form action="">
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput3">
+                        Rail(T)
+                    </label>
+                    <input name="" id="textinput3" placeholder="" value="2-1/4&quot;" type="text">
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput4">
+                        Stile(R)
+                    </label>
+                    <input name="" id="textinput4" placeholder="" value="2-1/4&quot;" type="text">
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput5">
+                        Rail(B)
+                    </label>
+                    <input name="" id="textinput5" placeholder="" value="2-1/4&quot;" type="text">
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput6">
+                        Stile(L)
+                    </label>
+                    <input name="" id="textinput6" placeholder="" value="2-1/4&quot;" type="text">
+                </fieldset>
+            </div><div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput7">
+                        Depth of Dado
+                    </label>
+                    <input name="" id="textinput7" placeholder="" value="3/8&quot;" type="text">
+                </fieldset>
+            </div>
+        </form>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a data-role="button" data-transition="none" href="#page3">
+                    Reset
+                </a>
+            </div>
+            <div class="ui-block-b">
+                <a data-role="button" data-transition="slide" data-theme="b" href="#page4"
+                data-icon="arrow-r" data-iconpos="right">
+                    Next
+                </a>
+            </div>
+        </div>
+        <br />
+    </div>
+    <div data-role="tabbar" data-iconpos="top" data-theme="b">
+        <ul>
+            <li>
+                <a href="#page1" data-direction="reverse" data-transition="slide" data-theme="" data-icon="home">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#page4" data-transition="slide" data-theme="" data-icon="gear">
+                    Options
+                </a>
+            </li>
+            <li>
+                <a href="#" data-transition="slide" data-theme="" data-icon="plus">
+                    Calculate
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Mitered -->
+<div data-role="page" id="mitered">
+    <div data-theme="b" data-role="header">
+        <h3>
+            Mitered
+        </h3>
+        <a data-role="button" data-direction="reverse" data-transition="slide"
+        href="#page1" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+            Back
+        </a>
+        <a data-role="button" data-transition="slide" href="#page4" data-icon="arrow-r"
+        data-iconpos="left" class="ui-btn-right">
+            Next
+        </a>
+    </div>
+    <div data-role="content">
+        <div>
+            <p style="text-align: center;">
+                <b>
+                    Rail and Stile Dimensions
+                    <br>
+                </b>
+            </p>
+        </div>
+        <div style=" text-align:center">
+            <img style="width: 100px; height: 161px" src="http://assets.codiqa.com/ps/33528/b36ab393cd3d047fMitered.png">
+        </div>
+        <form action="">
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput17">
+                        Rail(T)
+                    </label>
+                    <input name="" id="textinput17" placeholder="" value="2-1/4&quot;" type="text">
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput18">
+                        Stile(R)
+                    </label>
+                    <input name="" id="textinput18" placeholder="" value="2-1/4&quot;" type="text">
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput19">
+                        Rail(B)
+                    </label>
+                    <input name="" id="textinput19" placeholder="" value="2-1/4&quot;" type="text">
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput20">
+                        Stile(L)
+                    </label>
+                    <input name="" id="textinput20" placeholder="" value="2-1/4&quot;" type="text">
+                </fieldset>
+            </div>
+        </form>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a data-role="button" data-transition="none" href="#page3">
+                    Reset
+                </a>
+            </div>
+            <div class="ui-block-b">
+                <a data-role="button" data-transition="slide" data-theme="b" href="#page4"
+                data-icon="arrow-r" data-iconpos="right">
+                    Next
+                </a>
+            </div>
+        </div>
+        <br />
+    </div>
+    <div data-role="tabbar" data-iconpos="top" data-theme="b">
+        <ul>
+            <li>
+                <a href="#page1" data-direction="reverse" data-theme="" data-transition="slide" data-icon="home">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#page4" data-theme="" data-transition="slide" data-icon="gear">
+                    Options
+                </a>
+            </li>
+            <li>
+                <a href="#" data-theme="" data-transition="slide" data-icon="plus">
+                    Calculate
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+		
+<!-- SP Options -->
+<div data-role="page" id="page4">
+    <div data-theme="b" data-role="header" data-position="fixed">
+        <h3>
+            Options
+        </h3>
+        <a data-role="button" data-direction="reverse" data-transition="slide" data-rel="back" data-icon="arrow-l"
+        data-iconpos="left" class="ui-btn-left">
+            Back
+        </a>
+    </div>
+    <div data-role="content" style="padding: 15px">
+        <form action="">
+            <div>
+                <p style="text-align: center; ">
+                    <span>
+                        <b>
+                            Center Panel Clearance
+                        </b>
+                    </span>
+                </p>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput25">
+                        Height
+                    </label>
+                    <input name="" id="textinput25" placeholder="" value="1/8&quot;" type="text">
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput26">
+                        Width
+                    </label>
+                    <input name="" id="textinput26" placeholder="" value="1/8&quot;" type="text">
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput27">
+                        Panel Thickness
+                    </label>
+                    <input name="" id="textinput27" placeholder="" value="3/4&quot;" type="text">
+                </fieldset>
+            </div>
+            <div>
+                <p style="text-align: center; ">
+                    <span>
+                        <b>
+                            Door Opening Information
+                        </b>
+                    </span>
+                </p>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput28">
+                        Opening Width
+                    </label>
+                    <input name="" id="textinput28" placeholder="" value="" type="text">
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput29">
+                        Opening Height
+                    </label>
+                    <input name="" id="textinput29" placeholder="" value="" type="text">
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-type="vertical" data-mini="false">
+                    <legend>
+                        Select Number of Doors:
+                    </legend>
+                    <input name="radiobuttons1" id="radio1" value="radio1" type="radio">
+                    <label for="radio1">
+                        Single Door
+                    </label>
+                    <input name="radiobuttons1" id="radio2" value="radio2" type="radio">
+                    <label for="radio2">
+                        Double Door
+                    </label>
+                </fieldset>
+            </div>
+            <div>
+                <p style="text-align: center; ">
+                    <span>
+                        <b>
+                            Opening Overlay/Insert
+                        </b>
+                    </span>
+                </p>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput30">
+                        Right
+                    </label>
+                    <input name="" id="textinput30" placeholder="" value="1/2&quot;" type="text">
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput31">
+                        Left
+                    </label>
+                    <input name="" id="textinput31" placeholder="" value="1/2&quot;" type="text">
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput32">
+                        Top
+                    </label>
+                    <input name="" id="textinput32" placeholder="" value="1/2&quot;" type="text">
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput33">
+                        Bottom
+                    </label>
+                    <input name="" id="textinput33" placeholder="" value="1/2&quot;" type="text">
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput34">
+                        Clearance Between Doors
+                    </label>
+                    <input name="" id="textinput34" placeholder="" value="0" type="text">
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput35">
+                        Number Of Opening
+                    </label>
+                    <input name="" id="textinput35" placeholder="" value="1" type="text">
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <label for="textinput36">
+                        Door Name (Optional)
+                    </label>
+                    <input name="" id="textinput36" placeholder="" value="" type="text">
+                </fieldset>
+            </div></br>
+            <input type="submit" data-theme="a" value="Calculate"></br>
+        </form>
+    </div>
+    <div data-role="tabbar" data-iconpos="top" data-theme="b">
+        <ul>
+            <li>
+                <a href="#page1" data-direction="reverse" data-transition="slide" data-theme="" data-icon="home">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#page4" data-transition="slide" data-theme="" data-icon="gear">
+                    Options
+                </a>
+            </li>
+            <li>
+                <a href="#" data-transition="slide" data-theme="" data-icon="plus">
+                    Calculate
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+        <script>
+              //App custom javascript
+        </script>
+    </body>
+>>>>>>> origin/gh-pages
 
 	<title>iCabinetCalc</title>
 	<link href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet">
