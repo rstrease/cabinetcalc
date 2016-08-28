@@ -5,20 +5,21 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>iCabinetCalc</title>
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css"/>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
         <link rel="stylesheet" href="css/my.css" />
         <style>
             /* App custom styles */
         </style>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+        
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <script src="js/my.js"></script>
     </head>
     
     <body>
         <!-- Home -->
         <div data-role="page" id="page1">
-            <div data-theme="b" data-role="header" data-position="fixed">
+            <div data-theme="" data-role="header" data-position="fixed">
                 <h3>
                     iCabinetCalc
                 </h3>
@@ -27,13 +28,13 @@
                 <div class="ui-grid-b">
                     <div class="ui-block-a">
                         <div style="text-align: center;">
-							<a href="#single" data-transition="slide"><img style="width: 80px; height: 120px" src="images/Single.png"></a>
+							<a href="#single" data-transition="none"><img style="width: 80px; height: 120px" src="images/Single.png"></a>
                         </div>
                         <div>
                             <p style="text-align: center;">
                                 <span style="font-size: small;">
                                     <b>
-                                        <a href="#single" data-transition="slide" style="text-decoration: none">Single</a>
+                                        <a href="#single" data-transition="none" style="text-decoration: none">Single</a>
                                     </b>
                                 </span>
                             </p>
@@ -146,15 +147,15 @@
         </div>
 <!-- Single Panel -->
 <div data-role="page" id="single">
-    <div data-theme="b" data-role="header">
+    <div data-theme="" data-role="header">
         <h3>
             Single Panel
         </h3>
-        <a data-role="button" data-direction="reverse" data-transition="slide"
+        <a data-role="button" data-direction="reverse" data-transition="none"
         href="#page1" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
             Back
         </a>
-        <a data-role="button" data-transition="slide" href="#page4" data-icon="arrow-r"
+        <a data-role="button" data-transition="none" href="#page4" data-icon="arrow-r"
         data-iconpos="left" class="ui-btn-right">
             Next
         </a>
@@ -169,65 +170,78 @@
             </p>
         </div>
         <div style=" text-align:center">
-            <img style="width: 150px; height: 200px" src="images/SingleCalc.png">
+            <img style="width: 100px; height: 140px" src="images/Single.png">
         </div>
+        
         <form action="">
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-mini="true">
-                    <label for="textinput3">
-                        Rail(T)
-                    </label>
-                    <input name="" id="textinput3" placeholder="" value="2-1/4&quot;" type="text">
-                </fieldset>
-            </div>
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-mini="true">
-                    <label for="textinput4">
-                        Stile(R)
-                    </label>
-                    <input name="" id="textinput4" placeholder="" value="2-1/4&quot;" type="text">
-                </fieldset>
-            </div>
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-mini="true">
-                    <label for="textinput5">
-                        Rail(B)
-                    </label>
-                    <input name="" id="textinput5" placeholder="" value="2-1/4&quot;" type="text">
-                </fieldset>
-            </div>
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-mini="true">
-                    <label for="textinput6">
-                        Stile(L)
-                    </label>
-                    <input name="" id="textinput6" placeholder="" value="2-1/4&quot;" type="text">
-                </fieldset>
-            </div><div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-mini="true">
-                    <label for="textinput7">
-                        Depth of Dado
-                    </label>
-                    <input name="" id="textinput7" placeholder="" value="3/8&quot;" type="text">
-                </fieldset>
-            </div>
+        
+	        <div class="ui-grid-a">
+	        	<div class="ui-block-a">
+	        		<div class="ui-field-contain">
+	        			<label for="textinput3">
+	                        Rail(T)
+	                    </label>
+	                    <input name="" id="textinput3" placeholder="" value="2-1/4&quot;" type="text">
+					</div>
+	            </div>
+	            
+	            <div class="ui-block-b">
+	            	<div class="ui-field-contain">
+	                    <label for="textinput4">
+	                        Stile(R)
+	                    </label>
+	                    <input name="" id="textinput4" placeholder="" value="2-1/4&quot;" type="text">
+					</div>
+	            </div>
+			</div>
 			
-        </form>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<div class="ui-field-contain">
+						<label for="textinput5">
+			                Rail(B)
+			            </label>
+			            <input name="" id="textinput5" placeholder="" value="2-1/4&quot;" type="text">
+					</div>
+			    </div>
+			    
+			    <div class="ui-block-b">
+			    	<div class="ui-field-contain">
+			            <label for="textinput6">
+			                Stile(L)
+			            </label>
+			            <input name="" id="textinput6" placeholder="" value="2-1/4&quot;" type="text">
+					</div>
+			    </div>
+			</div>
+				
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<div class="ui-field-contain">
+						<label for="textinput7">
+			                Depth of Dado
+			            </label>
+			            <input name="" id="textinput7" placeholder="" value="3/8&quot;" type="text">
+					</div>
+			    </div>
+			</div>	
+        </form>  
     </div>
-    <div data-role="tabbar" data-iconpos="top" data-theme="b">
+    
+    <div data-role="tabbar" data-iconpos="top" data-theme="">
         <ul>
             <li>
-                <a href="#page1" data-direction="reverse" data-transition="slide" data-theme="" data-icon="home">
+                <a href="#page1" data-direction="reverse" data-transition="none" data-theme="" data-icon="home">
                     Home
                 </a>
             </li>
             <li>
-                <a href="#page4" data-transition="slide" data-theme="" data-icon="gear">
+                <a href="#page4" data-transition="none" data-theme="" data-icon="gear">
                     Options
                 </a>
             </li>
             <li>
-                <a href="#" data-transition="slide" data-theme="" data-icon="plus">
+                <a href="#" data-transition="none" data-theme="" data-icon="plus">
                     Calculate
                 </a>
             </li>
@@ -237,11 +251,11 @@
 		
 <!-- SP Options -->
 <div data-role="page" id="page4">
-    <div data-theme="b" data-role="header" data-position="fixed">
+    <div data-theme="" data-role="header" data-position="fixed">
         <h3>
             Options
         </h3>
-        <a data-role="button" data-direction="reverse" data-transition="slide" href="#single" data-icon="arrow-l"
+        <a data-role="button" data-direction="reverse" data-transition="none" href="#single" data-icon="arrow-l"
         data-iconpos="left" class="ui-btn-left">
             Back
         </a>
@@ -257,29 +271,29 @@
                     </span>
                 </p>
             </div>
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-mini="true">
+            <div  class="ui-field-contain">
+                
                     <label for="textinput25">
                         Height
                     </label>
                     <input name="" id="textinput25" placeholder="" value="1/8&quot;" type="text">
-                </fieldset>
+                
             </div>
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-mini="true">
+            <div  class="ui-field-contain">
+                
                     <label for="textinput26">
                         Width
                     </label>
                     <input name="" id="textinput26" placeholder="" value="1/8&quot;" type="text">
-                </fieldset>
+                
             </div>
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-mini="true">
+            <div  class="ui-field-contain">
+                
                     <label for="textinput27">
                         Panel Thickness
                     </label>
                     <input name="" id="textinput27" placeholder="" value="3/4&quot;" type="text">
-                </fieldset>
+               
             </div>
             <div>
                 <p style="text-align: center; ">
@@ -290,37 +304,36 @@
                     </span>
                 </p>
             </div>
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-mini="true">
+            <div class="ui-field-contain">
+                
                     <label for="textinput28">
                         Opening Width
                     </label>
                     <input name="" id="textinput28" placeholder="" value="" type="text">
-                </fieldset>
+                
             </div>
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-mini="true">
+            <div class="ui-field-contain">
+                
                     <label for="textinput29">
                         Opening Height
                     </label>
                     <input name="" id="textinput29" placeholder="" value="" type="text">
-                </fieldset>
+                
             </div>
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
-                    <legend>
-                        Select Number of Doors:
-                    </legend>
-                    <input name="radiobuttons1" id="radio1" value="radio1" type="radio">
-                    <label for="radio1">
-                        Single Door
-                    </label>
-                    <input name="radiobuttons1" id="radio2" value="radio2" type="radio">
-                    <label for="radio2">
-                        Double Door
-                    </label>
-                </fieldset>
-            </div>
+            
+            
+            
+            
+                <fieldset data-role="controlgroup" data-type="horizontal" class="ui-field-contain" data-mini="true">
+                    <legend>Number of Doors</legend>
+                    <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2a" value="on" checked="checked">
+                    <label for="radio-choice-h-2a">One</label>
+                    <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2b" value="off">
+                    <label for="radio-choice-h-2b">Two</label>
+                    
+                </fieldset>
+            
+            
             <div>
                 <p style="text-align: center; ">
                     <span>
@@ -330,79 +343,65 @@
                     </span>
                 </p>
             </div>
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-mini="true">
+            <div  class="ui-field-contain">
                     <label for="textinput30">
                         Right
                     </label>
                     <input name="" id="textinput30" placeholder="" value="1/2&quot;" type="text">
-                </fieldset>
             </div>
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-mini="true">
+            <div  class="ui-field-contain">
                     <label for="textinput31">
                         Left
                     </label>
                     <input name="" id="textinput31" placeholder="" value="1/2&quot;" type="text">
-                </fieldset>
             </div>
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-mini="true">
+            <div  class="ui-field-contain">
                     <label for="textinput32">
                         Top
                     </label>
                     <input name="" id="textinput32" placeholder="" value="1/2&quot;" type="text">
-                </fieldset>
             </div>
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-mini="true">
+            <div  class="ui-field-contain">
                     <label for="textinput33">
                         Bottom
                     </label>
                     <input name="" id="textinput33" placeholder="" value="1/2&quot;" type="text">
-                </fieldset>
             </div>
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-mini="true">
+            <div  class="ui-field-contain">
                     <label for="textinput34">
                         Clearance Between Doors
                     </label>
                     <input name="" id="textinput34" placeholder="" value="0" type="text">
-                </fieldset>
             </div>
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-mini="true">
+            <div  class="ui-field-contain">
                     <label for="textinput35">
                         Number Of Opening
                     </label>
                     <input name="" id="textinput35" placeholder="" value="1" type="text">
-                </fieldset>
             </div>
-            <div data-role="fieldcontain">
-                <fieldset data-role="controlgroup" data-mini="true">
+            <div  class="ui-field-contain">
                     <label for="textinput36">
                         Door Name (Optional)
                     </label>
                     <input name="" id="textinput36" placeholder="" value="" type="text">
-                </fieldset>
             </div></br>
-            <input type="submit" data-theme="a" value="Calculate"></br>
+            <input type="submit" data-theme="" value="Calculate"></br>
         </form>
     </div>
-    <div data-role="tabbar" data-iconpos="top" data-theme="b">
+    <div data-role="tabbar" data-iconpos="top" data-theme="">
         <ul>
             <li>
-                <a href="#page1" data-direction="reverse" data-transition="slide" data-theme="" data-icon="home">
+                <a href="#page1" data-direction="reverse" data-transition="none" data-theme="" data-icon="home">
                     Home
                 </a>
             </li>
             <li>
-                <a href="#page4" data-transition="slide" data-theme="" data-icon="gear">
+                <a href="#page4" data-transition="none" data-theme="" data-icon="gear">
                     Options
                 </a>
             </li>
             <li>
-                <a href="#" data-transition="slide"data-theme="" data-icon="plus">
+                <a href="#" data-transition="none" data-theme="" data-icon="plus">
                     Calculate
                 </a>
             </li>
