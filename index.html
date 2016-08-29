@@ -10,20 +10,17 @@
 	<style>
 	              /* App custom styles */
 	</style>
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js">
-	</script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
-	</script>
-	<script src="js/my.js">
-	</script>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/my.js"></script>
 </head>
 
 <body>
 	<!-- Home -->
 
 
-	<div data-role="page" id="page1">
-		<div data-position="fixed" data-role="header" data-theme="">
+	<div data-role="page" id="page1" data-theme="b">
+		<div data-position="fixed" data-role="header">
 			<h3>iCabinetCalc</h3>
 		</div>
 
@@ -32,24 +29,39 @@
 			<div class="ui-grid-b">
 				<div class="ui-block-a">
 					<div style="text-align: center;">
-						<a data-transition="none" href="#single"><img src="images/Single.png" style="width: 80px; height: 120px"></a>
+						<a data-transition="none" href="#single">
+							<img src="images/Single.png" style="width: 80px; height: 120px">
+						</a>
 					</div>
 
 
 					<div>
-						<p style="text-align: center;"><span style="font-size: small;"><b><a data-transition="none" href="#single" style="text-decoration: none">Single</a></b></span>
+						<p style="text-align: center;">
+							<span style="font-size: small;">
+								<b>
+									<a data-transition="none" href="#single" style="text-decoration: none">Single</a>
+								</b>
+							</span>
 						</p>
 					</div>
 				</div>
 
 
 				<div class="ui-block-b">
-					<div style="text-align: center;"><img src="images/Mitered.png" style="width: 80px; height: 120px">
+					<div style="text-align: center;">
+						<a data-transition="none" href="#mitered">
+							<img src="images/Mitered.png" style="width: 80px; height: 120px">
+						</a>
 					</div>
 
 
 					<div>
-						<p style="text-align: center;"><span style="font-size: small;"><b>Mitered</b></span>
+						<p style="text-align: center;">
+							<span style="font-size: small;">
+								<b>
+									<a data-transition="none" href="#mitered" style="text-decoration: none">Mitered</a>
+								</b>
+							</span>
 						</p>
 					</div>
 				</div>
@@ -135,7 +147,7 @@
 	<!-- Single Panel -->
 
 
-	<div data-role="page" id="single">
+	<div data-role="page" id="single" data-theme="b">
 		<div data-role="header" data-theme="">
 			<h3>Single Panel</h3>
 			<a class="ui-btn-left" data-direction="reverse" data-icon="arrow-l" data-iconpos="left" data-role="button" data-transition="none" href="#page1">Back</a> <a class="ui-btn-right" data-icon="arrow-r" data-iconpos="left" data-role="button" data-transition="none" href="#page4">Next</a>
@@ -235,7 +247,7 @@
 		</div>
 
 
-		<div data-iconpos="top" data-role="tabbar" data-theme="">
+		<div data-iconpos="top" data-role="tabbar" data-theme="b">
 			<ul>
 				<li>
 					<a data-direction="reverse" data-icon="home" data-theme="" data-transition="none" href="#page1">Home</a>
@@ -253,10 +265,133 @@
 			</ul>
 		</div>
 	</div>
+	
+	<!-- Mitered Panel -->
+	
+	
+		<div data-role="page" id="mitered" data-theme="b">
+			<div data-role="header" data-theme="">
+				<h3>Mitered Panel</h3>
+				<a class="ui-btn-left" data-direction="reverse" data-icon="arrow-l" data-iconpos="left" data-role="button" data-transition="none" href="#page1">Back</a> <a class="ui-btn-right" data-icon="arrow-r" data-iconpos="left" data-role="button" data-transition="none" href="#page4">Next</a>
+			</div>
+	
+	
+			<div data-role="content" style="padding: 15px">
+				<div>
+					<p style="text-align: center;"><b>Rail and Stile Dimensions<br></b>
+					</p>
+				</div>
+	
+	
+				<form action="">
+					<div class="ui-grid-b">
+						
+						<div class="ui-block-a">
+							
+						</div>
+						
+						<div class="ui-block-b">
+							<div>
+								<label for="textinput3">Rail Width(T)</label> 
+								<input id="textinput3" name="" placeholder="" type="text" value="2-1/4&quot;">
+							</div>
+						</div>
+						
+						<div class="ui-block-c">
+							
+						</div>
+						
+					</div>
+						
+					<div class="ui-grid-b">
+						
+						<div class="ui-block-a">
+							<div style="padding-top: 50px">
+								<label for="textinput6">Stile Width(L)</label> 
+								<input id="textinput6" name="" placeholder="" type="text" value="2-1/4&quot;">
+							</div>
+						</div>
+						
+						<div class="ui-block-b">
+							<div class="ui-field-contain" style="text-align: center">
+								<img src="images/Mitered.png" >
+							</div>
+						</div>
+						
+						<div class="ui-block-c">
+							<div style="padding-top: 50px">
+								<label for="textinput4">Stile Width(R)</label> 
+								<input id="textinput4" name="" placeholder="" type="text" value="2-1/4&quot;">
+							</div>
+						</div>
+						
+					</div>
+						
+					<div class="ui-grid-b">
+						
+						<div class="ui-block-a">
+							
+						</div>
+						
+						<div class="ui-block-b">
+							<div>
+								<label for="textinput5">Rail Width(B)</label> 
+								<input id="textinput5" name="" placeholder="" type="text" value="2-1/4&quot;">
+							</div>
+						</div>
+						
+						<div class="ui-block-c">
+							
+						</div>
+						
+					</div>
+					
+					<div class="ui-grid-b">
+						
+						<div class="ui-block-a">
+							
+						</div>
+						
+						<div class="ui-block-b">
+							<div>
+								<label for="textinput7">Depth of Dado</label> 
+								<input id="textinput7" name="" placeholder="" type="text" value="3/8&quot;">
+							</div>
+						</div>
+						
+						<div class="ui-block-c">
+							
+						</div>
+						
+					</div>
+					
+				</form>
+			</div>
+	
+	
+			<div data-iconpos="top" data-role="tabbar" data-theme="b">
+				<ul>
+					<li>
+						<a data-direction="reverse" data-icon="home" data-theme="" data-transition="none" href="#page1">Home</a>
+					</li>
+	
+	
+					<li>
+						<a data-icon="gear" data-theme="" data-transition="none" href="#page4">Options</a>
+					</li>
+	
+	
+					<li>
+						<a data-icon="plus" data-theme="" data-transition="none" href="#">Calculate</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	
 	<!-- SP Options -->
 
 
-	<div data-role="page" id="page4">
+	<div data-role="page" id="page4" data-theme="b">
 		<div data-position="fixed" data-role="header" data-theme="">
 			<h3>Options</h3>
 			<a class="ui-btn-left" data-direction="reverse" data-icon="arrow-l" data-iconpos="left" data-role="button" data-transition="none" href="#single">Back</a>
@@ -355,7 +490,7 @@
 		</div>
 
 
-		<div data-iconpos="top" data-role="tabbar" data-theme="">
+		<div data-iconpos="top" data-role="tabbar" data-theme="b">
 			<ul>
 				<li>
 					<a data-direction="reverse" data-icon="home" data-theme="" data-transition="none" href="#page1">Home</a>
