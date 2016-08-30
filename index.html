@@ -8,18 +8,21 @@
 	<link href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet">
 	<link href="css/my.css" rel="stylesheet">
 	<style>
-	              /* App custom styles */
+	                 /* App custom styles */
 	</style>
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-	<script src="js/my.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js">
+	</script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
+	</script>
+	<script src="js/my.js">
+	</script>
 </head>
 
 <body>
 	<!-- Home -->
 
 
-	<div data-role="page" id="page1" data-theme="b">
+	<div data-role="page" data-theme="a" id="page1">
 		<div data-position="fixed" data-role="header">
 			<h3>Door Style</h3>
 		</div>
@@ -29,19 +32,12 @@
 			<div class="ui-grid-b">
 				<div class="ui-block-a">
 					<div style="text-align: center;">
-						<a data-transition="none" href="#single">
-							<img src="images/Single.png" style="width: 80px; height: 120px">
-						</a>
+						<a data-transition="none" href="#single"><img src="images/SingleDoor.png" style="width: 80px; height: 120px"></a>
 					</div>
 
 
 					<div>
-						<p style="text-align: center;">
-							<span style="font-size: small;">
-								<b>
-									<a data-transition="none" href="#single" style="text-decoration: none">Single</a>
-								</b>
-							</span>
+						<p style="text-align: center;"><span style="font-size: small;"><b><a data-transition="none" href="#single" style="text-decoration: none">Single</a></b></span>
 						</p>
 					</div>
 				</div>
@@ -49,19 +45,12 @@
 
 				<div class="ui-block-b">
 					<div style="text-align: center;">
-						<a data-transition="none" href="#mitered">
-							<img src="images/Mitered.png" style="width: 80px; height: 120px">
-						</a>
+						<a data-transition="none" href="#mitered"><img src="images/MiteredDoor.png" style="width: 80px; height: 120px"></a>
 					</div>
 
 
 					<div>
-						<p style="text-align: center;">
-							<span style="font-size: small;">
-								<b>
-									<a data-transition="none" href="#mitered" style="text-decoration: none">Mitered</a>
-								</b>
-							</span>
+						<p style="text-align: center;"><span style="font-size: small;"><b><a data-transition="none" href="#mitered" style="text-decoration: none">Mitered</a></b></span>
 						</p>
 					</div>
 				</div>
@@ -147,7 +136,7 @@
 	<!-- Single Panel -->
 
 
-	<div data-role="page" id="single" data-theme="b">
+	<div data-role="page" data-theme="a" id="single">
 		<div data-role="header" data-theme="">
 			<h3>Single Panel</h3>
 			<a class="ui-btn-left" data-direction="reverse" data-icon="arrow-l" data-iconpos="left" data-role="button" data-transition="none" href="#page1">Back</a> <a class="ui-btn-right" data-icon="arrow-r" data-iconpos="left" data-role="button" data-transition="none" href="#page4">Next</a>
@@ -156,124 +145,113 @@
 
 		<div data-role="content" style="padding: 15px">
 			<div>
-				<p><b>Rail and Stile Dimensions<br></b>
+				<p style="text-align: center;"><b>Rail and Stile Dimensions<br></b>
 				</p>
 			</div>
 
 
 			<form action="">
 				<div class="ui-grid-b">
-					
 					<div class="ui-block-a">
-						
 					</div>
-					
+
+
 					<div class="ui-block-b">
 						<div style="text-align: center;">
-							<label for="textinput3">Rail Width(T)</label> 
-							<input id="textinput3" name="" placeholder="" type="text" value="2-1/4&quot;">
+							<label for="textinput3">Rail Width(T)</label> <input id="textinput3" name="" placeholder="" type="text" value="2-1/4&quot;">
 						</div>
 					</div>
-					
+
+
 					<div class="ui-block-c">
-						
 					</div>
-					
 				</div>
-					
+
+
 				<div class="ui-grid-b">
-					
 					<div class="ui-block-a">
 						<div style="padding-top: 50px; text-align: center;">
-							<label for="textinput6">Stile Width(L)</label> 
-							<input id="textinput6" name="" placeholder="" type="text" value="2-1/4&quot;">
+							<label for="textinput6">Stile Width(L)</label> <input id="textinput6" name="" placeholder="" type="text" value="2-1/4&quot;">
 						</div>
 					</div>
-					
+
+
 					<div class="ui-block-b">
-						<div class="ui-field-contain" style="text-align: center">
-							<img src="images/Single.png" >
+						<div class="ui-field-contain" style="text-align: center"><img src="images/SingleDoorOptions.png" style="width: 120px; height: 180px">
 						</div>
 					</div>
-					
+
+
 					<div class="ui-block-c">
 						<div style="padding-top: 50px; text-align: center;">
-							<label for="textinput4">Stile Width(R)</label> 
-							<input id="textinput4" name="" placeholder="" type="text" value="2-1/4&quot;">
+							<label for="textinput4">Stile Width(R)</label> <input id="textinput4" name="" placeholder="" type="text" value="2-1/4&quot;">
 						</div>
 					</div>
-					
 				</div>
-					
+
+
 				<div class="ui-grid-b">
-					
 					<div class="ui-block-a">
-						
 					</div>
-					
+
+
 					<div class="ui-block-b">
 						<div style="text-align: center;">
-							<label for="textinput5">Rail Width(B)</label> 
-							<input id="textinput5" name="" placeholder="" type="text" value="2-1/4&quot;">
+							<label for="textinput5">Rail Width(B)</label> <input id="textinput5" name="" placeholder="" type="text" value="2-1/4&quot;">
 						</div>
 					</div>
-					
+
+
 					<div class="ui-block-c">
-						
 					</div>
-					
 				</div>
-				
+
+
 				<div class="ui-grid-b">
-					
 					<div class="ui-block-a">
-						
 					</div>
-					
+
+
 					<div class="ui-block-b">
 						<div style="text-align: center;">
-							<label for="textinput7">Depth of Dado</label> 
-							<input id="textinput7" name="" placeholder="" type="text" value="3/8&quot;">
+							<label for="textinput7">Depth of Dado</label> <input id="textinput7" name="" placeholder="" type="text" value="3/8&quot;">
 						</div>
 					</div>
-					
+
+
 					<div class="ui-block-c">
-						
 					</div>
-					
 				</div>
-				
+
+
 				<div>
-									<p><span><b>Center Panel Clearance</b></span>
-									</p>
-								</div>
-				
-								<div class="ui-grid-b">
-									
-									<div class="ui-block-a" style="padding-right: 20px; text-align: center;">
-										<label for="textinput25">Height</label> 
-										<input id="textinput25" name="" placeholder="" type="text" value="1/8&quot;">	
-									</div>
-									
-									<div class="ui-block-b" style="padding-right: 20px; text-align: center;">
-										<div> 
-											<label for="textinput26">Width</label> 
-											<input id="textinput26" name="" placeholder="" type="text" value="1/8&quot;">
-										</div>
-									</div>
-									
-									<div class="ui-block-c" style="text-align: center;">
-										<label for="textinput27">Panel Thickness</label> 
-										<input id="textinput27" name="" placeholder="" type="text" value="3/4&quot;">
-									</div>
-									
-								</div>
-				
+					<p style="text-align: center;"><span><b>Center Panel Clearance</b></span>
+					</p>
+				</div>
+
+
+				<div class="ui-grid-b">
+					<div class="ui-block-a" style="padding-right: 20px; text-align: center;">
+						<label for="textinput25">Height</label> <input id="textinput25" name="" placeholder="" type="text" value="1/8&quot;">
+					</div>
+
+
+					<div class="ui-block-b" style="padding-right: 20px; text-align: center;">
+						<div>
+							<label for="textinput26">Width</label> <input id="textinput26" name="" placeholder="" type="text" value="1/8&quot;">
+						</div>
+					</div>
+
+
+					<div class="ui-block-c" style="text-align: center;">
+						<label for="textinput27">Panel Thickness</label> <input id="textinput27" name="" placeholder="" type="text" value="3/4&quot;">
+					</div>
+				</div>
 			</form>
 		</div>
 
 
-		<div data-iconpos="top" data-role="tabbar" data-theme="b">
+		<div data-iconpos="top" data-role="tabbar" data-theme="a">
 			<ul>
 				<li>
 					<a data-direction="reverse" data-icon="home" data-theme="" data-transition="none" href="#page1">Home</a>
@@ -291,133 +269,121 @@
 			</ul>
 		</div>
 	</div>
-	
 	<!-- Mitered Panel -->
-	
-	
-		<div data-role="page" id="mitered" data-theme="b">
-			<div data-role="header" data-theme="">
-				<h3>Mitered Panel</h3>
-				<a class="ui-btn-left" data-direction="reverse" data-icon="arrow-l" data-iconpos="left" data-role="button" data-transition="none" href="#page1">Back</a> <a class="ui-btn-right" data-icon="arrow-r" data-iconpos="left" data-role="button" data-transition="none" href="#page4">Next</a>
-			</div>
-	
-	
-			<div data-role="content" style="padding: 15px">
-				<div>
-					<p style="text-align: center;"><b>Rail and Stile Dimensions<br></b>
-					</p>
-				</div>
-	
-	
-				<form action="">
-					<div class="ui-grid-b">
-						
-						<div class="ui-block-a">
-							
-						</div>
-						
-						<div class="ui-block-b">
-							<div>
-								<label for="textinput3">Rail Width(T)</label> 
-								<input id="textinput3" name="" placeholder="" type="text" value="2-1/4&quot;">
-							</div>
-						</div>
-						
-						<div class="ui-block-c">
-							
-						</div>
-						
-					</div>
-						
-					<div class="ui-grid-b">
-						
-						<div class="ui-block-a">
-							<div style="padding-top: 50px">
-								<label for="textinput6">Stile Width(L)</label> 
-								<input id="textinput6" name="" placeholder="" type="text" value="2-1/4&quot;">
-							</div>
-						</div>
-						
-						<div class="ui-block-b">
-							<div class="ui-field-contain" style="text-align: center">
-								<img src="images/Mitered.png" >
-							</div>
-						</div>
-						
-						<div class="ui-block-c">
-							<div style="padding-top: 50px">
-								<label for="textinput4">Stile Width(R)</label> 
-								<input id="textinput4" name="" placeholder="" type="text" value="2-1/4&quot;">
-							</div>
-						</div>
-						
-					</div>
-						
-					<div class="ui-grid-b">
-						
-						<div class="ui-block-a">
-							
-						</div>
-						
-						<div class="ui-block-b">
-							<div>
-								<label for="textinput5">Rail Width(B)</label> 
-								<input id="textinput5" name="" placeholder="" type="text" value="2-1/4&quot;">
-							</div>
-						</div>
-						
-						<div class="ui-block-c">
-							
-						</div>
-						
-					</div>
-					
-					<div class="ui-grid-b">
-						
-						<div class="ui-block-a">
-							
-						</div>
-						
-						<div class="ui-block-b">
-							<div>
-								<label for="textinput7">Depth of Dado</label> 
-								<input id="textinput7" name="" placeholder="" type="text" value="3/8&quot;">
-							</div>
-						</div>
-						
-						<div class="ui-block-c">
-							
-						</div>
-						
-					</div>
-					
-				</form>
-			</div>
-	
-	
-			<div data-iconpos="top" data-role="tabbar" data-theme="b">
-				<ul>
-					<li>
-						<a data-direction="reverse" data-icon="home" data-theme="" data-transition="none" href="#page1">Home</a>
-					</li>
-	
-	
-					<li>
-						<a data-icon="gear" data-theme="" data-transition="none" href="#page4">Options</a>
-					</li>
-	
-	
-					<li>
-						<a data-icon="plus" data-theme="" data-transition="none" href="#">Calculate</a>
-					</li>
-				</ul>
-			</div>
+
+
+	<div data-role="page" data-theme="a" id="mitered">
+		<div data-role="header" data-theme="">
+			<h3>Mitered Panel</h3>
+			<a class="ui-btn-left" data-direction="reverse" data-icon="arrow-l" data-iconpos="left" data-role="button" data-transition="none" href="#page1">Back</a> <a class="ui-btn-right" data-icon="arrow-r" data-iconpos="left" data-role="button" data-transition="none" href="#page4">Next</a>
 		</div>
-	
+
+
+		<div data-role="content" style="padding: 15px">
+			<div>
+				<p style="text-align: center;"><b>Rail and Stile Dimensions<br></b>
+				</p>
+			</div>
+
+
+			<form action="">
+				<div class="ui-grid-b">
+					<div class="ui-block-a">
+					</div>
+
+
+					<div class="ui-block-b">
+						<div>
+							<label for="textinput3">Rail Width(T)</label> <input id="textinput3" name="" placeholder="" type="text" value="2-1/4&quot;">
+						</div>
+					</div>
+
+
+					<div class="ui-block-c">
+					</div>
+				</div>
+
+
+				<div class="ui-grid-b">
+					<div class="ui-block-a">
+						<div style="padding-top: 50px">
+							<label for="textinput6">Stile Width(L)</label> <input id="textinput6" name="" placeholder="" type="text" value="2-1/4&quot;">
+						</div>
+					</div>
+
+
+					<div class="ui-block-b">
+						<div class="ui-field-contain" style="text-align: center"><img src="images/MiteredDoorOptions.png" style="width: 120px; height: 180px">
+						</div>
+					</div>
+
+
+					<div class="ui-block-c">
+						<div style="padding-top: 50px">
+							<label for="textinput4">Stile Width(R)</label> <input id="textinput4" name="" placeholder="" type="text" value="2-1/4&quot;">
+						</div>
+					</div>
+				</div>
+
+
+				<div class="ui-grid-b">
+					<div class="ui-block-a">
+					</div>
+
+
+					<div class="ui-block-b">
+						<div>
+							<label for="textinput5">Rail Width(B)</label> <input id="textinput5" name="" placeholder="" type="text" value="2-1/4&quot;">
+						</div>
+					</div>
+
+
+					<div class="ui-block-c">
+					</div>
+				</div>
+
+
+				<div class="ui-grid-b">
+					<div class="ui-block-a">
+					</div>
+
+
+					<div class="ui-block-b">
+						<div>
+							<label for="textinput7">Depth of Dado</label> <input id="textinput7" name="" placeholder="" type="text" value="3/8&quot;">
+						</div>
+					</div>
+
+
+					<div class="ui-block-c">
+					</div>
+				</div>
+			</form>
+		</div>
+
+
+		<div data-iconpos="top" data-role="tabbar" data-theme="a">
+			<ul>
+				<li>
+					<a data-direction="reverse" data-icon="home" data-theme="" data-transition="none" href="#page1">Home</a>
+				</li>
+
+
+				<li>
+					<a data-icon="gear" data-theme="" data-transition="none" href="#page4">Options</a>
+				</li>
+
+
+				<li>
+					<a data-icon="plus" data-theme="" data-transition="none" href="#">Calculate</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 	<!-- SP Options -->
 
 
-	<div data-role="page" id="page4" data-theme="b">
+	<div data-role="page" data-theme="a" id="page4">
 		<div data-position="fixed" data-role="header" data-theme="">
 			<h3>Opening Information</h3>
 			<a class="ui-btn-left" data-direction="reverse" data-icon="arrow-l" data-iconpos="left" data-role="button" data-transition="none" href="#single">Back</a>
@@ -426,95 +392,74 @@
 
 		<div data-role="content" style="padding: 15px">
 			<form action="">
-				
 				<div class="ui-grid-a">
-					
 					<div class="ui-block-a" style="padding-right: 20px;">
-						<label for="textinput28">Opening Width</label>
-						<input id="textinput28" name="" placeholder="" type="text" value="">	
+						<label for="textinput28">Opening Width</label> <input id="textinput28" name="" placeholder="" type="text" value="">
 					</div>
-					
+
+
 					<div class="ui-block-b">
 						<div>
-							<label for="textinput29">Opening Height</label>
-							<input id="textinput29" name="" placeholder="" type="text" value="">
+							<label for="textinput29">Opening Height</label> <input id="textinput29" name="" placeholder="" type="text" value="">
 						</div>
 					</div>
-					
 				</div>
-				
 
-					<div>
-						<fieldset data-role="controlgroup" data-type="" data-mini="true">
-							<legend>Number of Doors</legend>
-							<input type="radio" name="radio-choice-h-2" id="radio-choice-h-2a" value="on" checked="checked">
-							<label for="radio-choice-h-2a">One</label>
-							<input type="radio" name="radio-choice-h-2" id="radio-choice-h-2b" value="off">
-							<label for="radio-choice-h-2b">Two</label>
-						</fieldset>
-					</div>
-					<div>
-						<label for="textinput34">Clearance Between Doors</label> 
-						<input id="textinput34" name="" placeholder="" type="text" value="0">
-					</div>
 
-				
+				<div>
+					<fieldset data-mini="true" data-role="controlgroup" data-type="">
+						<legend>Number of Doors</legend> <input checked="checked" id="radio-choice-h-2a" name="radio-choice-h-2" type="radio" value="on"> <label for="radio-choice-h-2a">One</label> <input id="radio-choice-h-2b" name="radio-choice-h-2" type="radio" value="off"> <label for="radio-choice-h-2b">Two</label>
+					</fieldset>
+				</div>
 
-				
-				
-					<div style="padding-bottom: 20px;">
-						<fieldset data-role="controlgroup" data-type="" data-mini="true">
-							<legend>Overlay/Inset</legend>
-							<input type="radio" name="radio-choice-h-3" id="radio-choice-h-3a" value="on" checked="checked">
-							<label for="radio-choice-h-3a">Overlay</label>
-							<input type="radio" name="radio-choice-h-3" id="radio-choice-h-3b" value="off">
-							<label for="radio-choice-h-3b">Inset</label>
-						</fieldset>
-					</div>
-					
+
+				<div>
+					<label for="textinput34">Clearance Between Doors</label> <input id="textinput34" name="" placeholder="" type="text" value="0">
+				</div>
+
+
+				<div style="padding-bottom: 20px;">
+					<fieldset data-mini="true" data-role="controlgroup" data-type="">
+						<legend>Overlay/Inset</legend> <input checked="checked" id="radio-choice-h-3a" name="radio-choice-h-3" type="radio" value="on"> <label for="radio-choice-h-3a">Overlay</label> <input id="radio-choice-h-3b" name="radio-choice-h-3" type="radio" value="off"> <label for="radio-choice-h-3b">Inset</label>
+					</fieldset>
+				</div>
 
 
 				<div class="ui-grid-a">
-					
 					<div class="ui-block-a" style="padding-right: 20px;">
 						<div>
-							<label for="textinput30">Top</label> 
-							<input id="textinput30" name="" placeholder="" type="text" value="1/2&quot;">
-						</div>
-					</div>
-					
-					<div class="ui-block-b">
-						<div>
-							<label for="textinput33">Bottom</label> 
-							<input id="textinput33" name="" placeholder="" type="text" value="1/2&quot;">
+							<label for="textinput30">Top</label> <input id="textinput30" name="" placeholder="" type="text" value="1/2&quot;">
 						</div>
 					</div>
 
-					
-				</div>
-					
-				<div class="ui-grid-a">
-					
-					<div class="ui-block-a" style="padding-right: 20px;">
-						<div>
-							<label for="textinput31">Left</label> 
-							<input id="textinput31" name="" placeholder="" type="text" value="1/2&quot;">
-						</div>
-					</div>
-					
+
 					<div class="ui-block-b">
 						<div>
-							<label for="textinput32">Right</label> 
-							<input id="textinput32" name="" placeholder="" type="text" value="1/2&quot;">
+							<label for="textinput33">Bottom</label> <input id="textinput33" name="" placeholder="" type="text" value="1/2&quot;">
 						</div>
 					</div>
-					
 				</div>
-				
+
+
+				<div class="ui-grid-a">
+					<div class="ui-block-a" style="padding-right: 20px;">
+						<div>
+							<label for="textinput31">Left</label> <input id="textinput31" name="" placeholder="" type="text" value="1/2&quot;">
+						</div>
+					</div>
+
+
+					<div class="ui-block-b">
+						<div>
+							<label for="textinput32">Right</label> <input id="textinput32" name="" placeholder="" type="text" value="1/2&quot;">
+						</div>
+					</div>
+				</div>
+
+
 				<div>
 					<label for="textinput36">Door Name</label> <input id="textinput36" name="" placeholder="" type="text" value="">
 				</div>
-				
 				<br>
 				<input data-theme="" type="submit" value="Calculate"><br>
 			</form>
@@ -540,7 +485,7 @@
 		</div>
 	</div>
 	<script>
-	                //App custom javascript
+	                   //App custom javascript
 	</script>
 </body>
 </html>
