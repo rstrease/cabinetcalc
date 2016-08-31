@@ -3,16 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	
+	<meta content="yes" name="apple-mobile-web-app-capable">
+
 	<title>CabinetDoorCalc</title>
 	<link href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet">
 	<link href="css/my.css" rel="stylesheet">
-	<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png" />
-	<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png" />
-	
+	<link href="apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+	<link href="apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
 	<style>
-	                 /* App custom styles */
+	                    /* App custom styles */
 	</style>
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js">
 	</script>
@@ -26,7 +25,7 @@
 	<!-- Home -->
 
 
-	<div data-role="page" data-theme="b" id="page1">
+	<div data-role="page" data-theme="a" id="page1">
 		<div data-position="fixed" data-role="header">
 			<h3>Door Style</h3>
 		</div>
@@ -140,10 +139,10 @@
 	<!-- Single Panel -->
 
 
-	<div data-role="page" data-theme="b" id="single">
+	<div data-role="page" data-theme="a" id="single">
 		<div data-role="header" data-theme="">
 			<h3>Single Panel</h3>
-			<a class="ui-btn-left" data-direction="reverse" data-icon="arrow-l" data-iconpos="left" data-role="button" data-transition="none" href="#page1">Back</a> 
+			<a class="ui-btn-left" data-direction="reverse" data-icon="arrow-l" data-iconpos="left" data-role="button" data-transition="none" href="#page1">Back</a>
 		</div>
 
 
@@ -237,114 +236,107 @@
 						<label for="textinput27">Panel Thickness</label> <input id="textinput27" name="" placeholder="" type="text" value="3/4&quot;">
 					</div>
 				</div>
-				
+
+
 				<div>
 					<p style="text-align: center;"><span><b>Opening Information</b></span>
 					</p>
 				</div>
-				
+
+
 				<div class="ui-grid-a">
-									<div class="ui-block-a" style="padding-right: 20px;">
-										<label for="textinput28">Opening Width</label> <input id="textinput28" name="" placeholder="" type="text" value="">
-									</div>
-				
-				
-									<div class="ui-block-b">
-										<div>
-											<label for="textinput29">Opening Height</label> <input id="textinput29" name="" placeholder="" type="text" value="">
-										</div>
-									</div>
-								</div>
-				
-				
-								<div style="margin-bottom: 20px;">
-									<fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
-										<legend>Number of Doors</legend> 
-										<input checked="checked" id="radio-choice-h-2a" name="radio-choice-h-2" type="radio" value="on"> 
-										<label for="radio-choice-h-2a">One</label> 
-										<input id="radio-choice-h-2b" name="radio-choice-h-2" type="radio" value="off"> 
-										<label for="radio-choice-h-2b">Two</label>
-									</fieldset>
-								</div>
-				
-				
-								<div style="margin-bottom: 20px;">
-									<label for="textinput34">Clearance Between Doors</label> <input id="textinput34" name="" placeholder="" type="text" value="0">
-								</div>
-				
+					<div class="ui-block-a" style="padding-right: 20px;">
+						<label for="textinput28">Opening Width</label> <input id="textinput28" name="" placeholder="" type="text" value="">
+					</div>
+
+
+					<div class="ui-block-b">
+						<div>
+							<label for="textinput29">Opening Height</label> <input id="textinput29" name="" placeholder="" type="text" value="">
+						</div>
+					</div>
+				</div>
+
+
+				<div style="margin-bottom: 20px;">
+					<fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
+						<legend>Number of Doors</legend> <input checked="checked" id="radio-choice-h-2a" name="radio-choice-h-2" type="radio" value="on"> <label for="radio-choice-h-2a">One</label> <input id="radio-choice-h-2b" name="radio-choice-h-2" type="radio" value="off"> <label for="radio-choice-h-2b">Two</label>
+					</fieldset>
+				</div>
+
+
+				<div style="margin-bottom: 20px;">
+					<label for="textinput34">Clearance Between Doors</label> <input id="textinput34" name="" placeholder="" type="text" value="0">
+				</div>
+
+
 				<div>
 					<p style="text-align: center;"><span><b>Overlay/Inset</b></span>
 					</p>
 				</div>
-								<div style="padding-bottom: 20px;">
-									<fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
-										<input checked="checked" id="radio-choice-h-3a" name="radio-choice-h-3" type="radio" value="on"> 
-										<label for="radio-choice-h-3a">Overlay</label> 
-										<input id="radio-choice-h-3b" name="radio-choice-h-3" type="radio" value="off"> 
-										<label for="radio-choice-h-3b">Inset</label>
-									</fieldset>
-								</div>
-								
-				
-								<div class="ui-grid-c" style="margin-bottom: 20px;">
-									<div class="ui-block-a" style="padding-right: 20px;">
-										<div>
-											<label for="textinput30">Top</label> <input id="textinput30" name="" placeholder="" type="text" value="1/2&quot;">
-										</div>
-									</div>
-				
-				
-									<div class="ui-block-b" style="padding-right: 20px;">
-										<div>
-											<label for="textinput33">Bottom</label> <input id="textinput33" name="" placeholder="" type="text" value="1/2&quot;">
-										</div>
-									</div>
-				
-									<div class="ui-block-c" style="padding-right: 20px;">
-										<div>
-											<label for="textinput31">Left</label> <input id="textinput31" name="" placeholder="" type="text" value="1/2&quot;">
-										</div>
-									</div>
-				
-				
-									<div class="ui-block-d">
-										<div>
-											<label for="textinput32">Right</label> <input id="textinput32" name="" placeholder="" type="text" value="1/2&quot;">
-										</div>
-									</div>
-								</div>
+
+
+				<div style="padding-bottom: 20px;">
+					<fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
+						<input checked="checked" id="radio-choice-h-3a" name="radio-choice-h-3" type="radio" value="on"> <label for="radio-choice-h-3a">Overlay</label> <input id="radio-choice-h-3b" name="radio-choice-h-3" type="radio" value="off"> <label for="radio-choice-h-3b">Inset</label>
+					</fieldset>
+				</div>
+
+
+				<div class="ui-grid-c" style="margin-bottom: 20px;">
+					<div class="ui-block-a" style="padding-right: 20px;">
+						<div>
+							<label for="textinput30">Top</label> <input id="textinput30" name="" placeholder="" type="text" value="1/2&quot;">
+						</div>
+					</div>
+
+
+					<div class="ui-block-b" style="padding-right: 20px;">
+						<div>
+							<label for="textinput33">Bottom</label> <input id="textinput33" name="" placeholder="" type="text" value="1/2&quot;">
+						</div>
+					</div>
+
+
+					<div class="ui-block-c" style="padding-right: 20px;">
+						<div>
+							<label for="textinput31">Left</label> <input id="textinput31" name="" placeholder="" type="text" value="1/2&quot;">
+						</div>
+					</div>
+
+
+					<div class="ui-block-d">
+						<div>
+							<label for="textinput32">Right</label> <input id="textinput32" name="" placeholder="" type="text" value="1/2&quot;">
+						</div>
+					</div>
+				</div>
+
+
 				<div class="ui-grid-a">
-									<div class="ui-block-a" style="padding-right: 20px;">
-										<label for="textinput28"></label> <input id="textinput28" name="" placeholder="" type="text" value="">
-									</div>
-				
-				
-									<div class="ui-block-b">
-										<div>
-											
-											<button class="ui-btn">Set All</button>
-										</div>
-									</div>
-								</div>
-				
-								<div>
-									<label for="textinput36">Door Name</label> <input id="textinput36" name="" placeholder="" type="text" value="">
-								</div>
-								<br>
-								<input data-theme="" type="submit" value="Calculate"><br>
+					<div class="ui-block-a" style="padding-right: 20px;">
+						<label for="textinput28"></label> <input id="textinput28" name="" placeholder="" type="text" value="">
+					</div>
+
+
+					<div class="ui-block-b">
+						<div>
+							<button class="ui-btn">Set All</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div>
+					<label for="textinput36">Door Name</label> <input id="textinput36" name="" placeholder="" type="text" value="">
+				</div>
+				<br>
+				<input data-theme="" type="submit" value="Calculate"><br>
 			</form>
 		</div>
-		
-
-		
-		
-		
-		
-		
-		
 
 
-		<div data-iconpos="top" data-role="tabbar" data-theme="b">
+		<div data-iconpos="top" data-role="tabbar" data-theme="a">
 			<ul>
 				<li>
 					<a data-direction="reverse" data-icon="home" data-theme="" data-transition="none" href="#page1">Home</a>
@@ -360,7 +352,7 @@
 	<!-- Mitered Panel -->
 
 
-	<div data-role="page" data-theme="b" id="mitered">
+	<div data-role="page" data-theme="a" id="mitered">
 		<div data-role="header" data-theme="">
 			<h3>Mitered Panel</h3>
 			<a class="ui-btn-left" data-direction="reverse" data-icon="arrow-l" data-iconpos="left" data-role="button" data-transition="none" href="#page1">Back</a> <a class="ui-btn-right" data-icon="arrow-r" data-iconpos="left" data-role="button" data-transition="none" href="#page4">Next</a>
@@ -380,8 +372,8 @@
 					</div>
 
 
-					<div class="ui-block-b">
-						<div>
+					<div class="ui-block-b" style="padding-right: 10px;">
+						<div style="text-align: center; padding: 0 20px;">
 							<label for="textinput3">Rail Width(T)</label> <input id="textinput3" name="" placeholder="" type="text" value="2-1/4&quot;">
 						</div>
 					</div>
@@ -394,7 +386,7 @@
 
 				<div class="ui-grid-b">
 					<div class="ui-block-a">
-						<div style="padding-top: 50px">
+						<div style="padding-top: 50px; text-align: center;">
 							<label for="textinput6">Stile Width(L)</label> <input id="textinput6" name="" placeholder="" type="text" value="2-1/4&quot;">
 						</div>
 					</div>
@@ -407,7 +399,7 @@
 
 
 					<div class="ui-block-c">
-						<div style="padding-top: 50px">
+						<div style="padding-top: 50px; text-align: center;">
 							<label for="textinput4">Stile Width(R)</label> <input id="textinput4" name="" placeholder="" type="text" value="2-1/4&quot;">
 						</div>
 					</div>
@@ -420,70 +412,147 @@
 
 
 					<div class="ui-block-b">
-						<div>
+						<div style="text-align: center; padding: 0 20px;">
 							<label for="textinput5">Rail Width(B)</label> <input id="textinput5" name="" placeholder="" type="text" value="2-1/4&quot;">
 						</div>
 					</div>
 
 
 					<div class="ui-block-c">
+						<div>
+							<label for="textinput7">Depth of Dado</label> <input id="textinput7" name="" placeholder="" type="text" value="3/8&quot;">
+						</div>
 					</div>
 				</div>
 
 
+				<div>
+					<p style="text-align: center;"><span><b>Center Panel Clearance</b></span>
+					</p>
+				</div>
+
+
 				<div class="ui-grid-b">
-					<div class="ui-block-a">
+					<div class="ui-block-a" style="padding-right: 20px; text-align: center;">
+						<label for="textinput25">Height</label> <input id="textinput25" name="" placeholder="" type="text" value="1/8&quot;">
+					</div>
+
+
+					<div class="ui-block-b" style="padding-right: 20px; text-align: center;">
+						<div>
+							<label for="textinput26">Width</label> <input id="textinput26" name="" placeholder="" type="text" value="1/8&quot;">
+						</div>
+					</div>
+
+
+					<div class="ui-block-c" style="text-align: center;">
+						<label for="textinput27">Panel Thickness</label> <input id="textinput27" name="" placeholder="" type="text" value="3/4&quot;">
+					</div>
+				</div>
+
+
+				<div>
+					<p style="text-align: center;"><span><b>Opening Information</b></span>
+					</p>
+				</div>
+
+
+				<div class="ui-grid-a">
+					<div class="ui-block-a" style="padding-right: 20px;">
+						<label for="textinput28">Opening Width</label> <input id="textinput28" name="" placeholder="" type="text" value="">
 					</div>
 
 
 					<div class="ui-block-b">
 						<div>
-							<label for="textinput7">Depth of Dado</label> <input id="textinput7" name="" placeholder="" type="text" value="3/8&quot;">
+							<label for="textinput29">Opening Height</label> <input id="textinput29" name="" placeholder="" type="text" value="">
+						</div>
+					</div>
+				</div>
+
+
+				<div style="margin-bottom: 20px;">
+					<fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
+						<legend>Number of Doors</legend> <input checked="checked" id="radio-choice-h-2a" name="radio-choice-h-2" type="radio" value="on"> <label for="radio-choice-h-2a">One</label> <input id="radio-choice-h-2b" name="radio-choice-h-2" type="radio" value="off"> <label for="radio-choice-h-2b">Two</label>
+					</fieldset>
+				</div>
+
+
+				<div style="margin-bottom: 20px;">
+					<label for="textinput34">Clearance Between Doors</label> <input id="textinput34" name="" placeholder="" type="text" value="0">
+				</div>
+
+
+				<div>
+					<p style="text-align: center;"><span><b>Overlay/Inset</b></span>
+					</p>
+				</div>
+
+
+				<div style="padding-bottom: 20px;">
+					<fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
+						<input checked="checked" id="radio-choice-h-3a" name="radio-choice-h-3" type="radio" value="on"> <label for="radio-choice-h-3a">Overlay</label> <input id="radio-choice-h-3b" name="radio-choice-h-3" type="radio" value="off"> <label for="radio-choice-h-3b">Inset</label>
+					</fieldset>
+				</div>
+
+
+				<div class="ui-grid-c" style="margin-bottom: 20px;">
+					<div class="ui-block-a" style="padding-right: 20px;">
+						<div>
+							<label for="textinput30">Top</label> <input id="textinput30" name="" placeholder="" type="text" value="1/2&quot;">
 						</div>
 					</div>
 
 
-					<div class="ui-block-c">
+					<div class="ui-block-b" style="padding-right: 20px;">
+						<div>
+							<label for="textinput33">Bottom</label> <input id="textinput33" name="" placeholder="" type="text" value="1/2&quot;">
+						</div>
 					</div>
-					
+
+
+					<div class="ui-block-c" style="padding-right: 20px;">
+						<div>
+							<label for="textinput31">Left</label> <input id="textinput31" name="" placeholder="" type="text" value="1/2&quot;">
+						</div>
+					</div>
+
+
+					<div class="ui-block-d">
+						<div>
+							<label for="textinput32">Right</label> <input id="textinput32" name="" placeholder="" type="text" value="1/2&quot;">
+						</div>
+					</div>
 				</div>
-				
+
+
+				<div class="ui-grid-a">
+					<div class="ui-block-a" style="padding-right: 20px;">
+						<label for="textinput28"></label> <input id="textinput28" name="" placeholder="" type="text" value="1/2&quot;">
+					</div>
+
+
+					<div class="ui-block-b">
+						<div>
+							<button class="ui-btn">Set All</button>
+						</div>
+					</div>
+				</div>
+
+
 				<div>
-									<p style="text-align: center;"><span><b>Center Panel Clearance</b></span>
-									</p>
-								</div>
-				
-				
-								<div class="ui-grid-b">
-									<div class="ui-block-a" style="padding-right: 20px; text-align: center;">
-										<label for="textinput25">Height</label> <input id="textinput25" name="" placeholder="" type="text" value="1/8&quot;">
-									</div>
-				
-				
-									<div class="ui-block-b" style="padding-right: 20px; text-align: center;">
-										<div>
-											<label for="textinput26">Width</label> <input id="textinput26" name="" placeholder="" type="text" value="1/8&quot;">
-										</div>
-									</div>
-				
-				
-									<div class="ui-block-c" style="text-align: center;">
-										<label for="textinput27">Panel Thickness</label> <input id="textinput27" name="" placeholder="" type="text" value="3/4&quot;">
-									</div>
-									</div>
+					<label for="textinput36">Door Name</label> <input id="textinput36" name="" placeholder="" type="text" value="">
+				</div>
+				<br>
+				<input data-theme="" type="submit" value="Calculate"><br>
 			</form>
 		</div>
 
 
-		<div data-iconpos="top" data-role="tabbar" data-theme="b">
+		<div data-iconpos="top" data-role="tabbar" data-theme="a">
 			<ul>
 				<li>
 					<a data-direction="reverse" data-icon="home" data-theme="" data-transition="none" href="#page1">Home</a>
-				</li>
-
-
-				<li>
-					<a data-icon="gear" data-theme="" data-transition="none" href="#page4">Options</a>
 				</li>
 
 
@@ -493,16 +562,16 @@
 			</ul>
 		</div>
 	</div>
-		<script>
-	                   //App custom javascript
-	                   // When ready...
-	                   window.addEventListener("load",function() {
-	                   	// Set a timeout...
-	                   	setTimeout(function(){
-	                   		// Hide the address bar!
-	                   		window.scrollTo(0, 1);
-	                   	}, 0);
-	                   });
+	<script>
+	                      //App custom javascript
+	                      // When ready...
+	                      window.addEventListener("load",function() {
+	                       // Set a timeout...
+	                       setTimeout(function(){
+	                           // Hide the address bar!
+	                           window.scrollTo(0, 1);
+	                       }, 0);
+	                      });
 	</script>
 </body>
 </html>
