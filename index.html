@@ -15,7 +15,7 @@
 	</style>
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
-	<script src="js/my.js"></script>
+	<!--<script src="js/my.js"></script>-->
 </head>
 
 <body>
@@ -32,7 +32,7 @@
 			<div class="ui-grid-b">
 				<div class="ui-block-a">
 					<div style="text-align: center;">
-						<a data-transition="none" href="#single"><img src="images/SingleDoor.png" style="width: 80px; height: 120px"></a>
+						<a data-transition="none" href="#single"><img src="images/SingleDoor.png" style="width: 80px;"></a>
 					</div>
 
 
@@ -45,7 +45,7 @@
 
 				<div class="ui-block-b">
 					<div style="text-align: center;">
-						<a data-transition="none" href="#mitered"><img src="images/MiteredDoor.png" style="width: 80px; height: 120px"></a>
+						<a data-transition="none" href="#mitered"><img src="images/MiteredDoor.png" style="width: 80px;"></a>
 					</div>
 
 
@@ -177,7 +177,7 @@
 
 
 					<div class="ui-block-b" style="padding-right: 20px;">
-						<div class="ui-field-contain" style="text-align: center"><img src="images/SingleDoorOptions.png" style="width: 120px; height: 180px">
+						<div class="ui-field-contain" style="text-align: center"><img src="images/SingleDoorOptions.png" style="width: 120px;">
 						</div>
 					</div>
 
@@ -256,7 +256,7 @@
 
 
 				<div style="margin-bottom: 20px;">
-					<fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
+					<fieldset data-mini="true" data-role="controlgroup" data-type="">
 						<legend>Number of Doors</legend> <input checked="checked" id="radio-choice-h-2a" name="radio-choice-h-2" type="radio" value="on"> <label for="radio-choice-h-2a">One</label> <input id="radio-choice-h-2b" name="radio-choice-h-2" type="radio" value="off"> <label for="radio-choice-h-2b">Two</label>
 					</fieldset>
 				</div>
@@ -274,40 +274,37 @@
 
 
 				<div style="padding-bottom: 20px;">
-					<fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
+					<fieldset data-mini="true" data-role="controlgroup" data-type="">
 						<input checked="checked" id="radio-choice-h-3a" name="radio-choice-h-3" type="radio" value="on"> <label for="radio-choice-h-3a">Overlay</label> <input id="radio-choice-h-3b" name="radio-choice-h-3" type="radio" value="off"> <label for="radio-choice-h-3b">Inset</label>
 					</fieldset>
 				</div>
 
 
-				<div class="ui-grid-c" style="margin-bottom: 20px;">
-					<div class="ui-block-a" style="padding-right: 20px;">
-						<div>
+				
+						<div class="ui-field-contain">
 							<label for="textinput30">Top</label> <input id="textinput30" name="" placeholder="" type="text" value="1/2&quot;">
 						</div>
-					</div>
+					
 
 
-					<div class="ui-block-b" style="padding-right: 20px;">
-						<div>
+					
+						<div class="ui-field-contain">
 							<label for="textinput33">Bottom</label> <input id="textinput33" name="" placeholder="" type="text" value="1/2&quot;">
 						</div>
-					</div>
+					
 
 
-					<div class="ui-block-c" style="padding-right: 20px;">
-						<div>
+						<div class="ui-field-contain">
 							<label for="textinput31">Left</label> <input id="textinput31" name="" placeholder="" type="text" value="1/2&quot;">
 						</div>
-					</div>
+					
 
 
-					<div class="ui-block-d">
-						<div>
+						<div class="ui-field-contain">
 							<label for="textinput32">Right</label> <input id="textinput32" name="" placeholder="" type="text" value="1/2&quot;">
 						</div>
-					</div>
-				</div>
+					
+				
 
 
 				<div class="ui-grid-a">
@@ -318,7 +315,7 @@
 
 					<div class="ui-block-b">
 						<div>
-							<button class="ui-btn">Set All</button>
+							<button class="ui-btn ui-corner-all ui-shadow">Set All</button>
 						</div>
 					</div>
 				</div>
