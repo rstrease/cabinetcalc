@@ -22,7 +22,7 @@
 	<!-- Home -->
 
 
-	<div data-role="page" data-theme="a" id="page1">
+	<div data-role="page" data-theme="b" id="page1">
 		<div data-position="fixed" data-role="header">
 			<h3>Door Style</h3>
 		</div>
@@ -37,7 +37,8 @@
 
 
 					<div>
-						<p style="text-align: center;"><span style="font-size: small;"><b><a data-transition="none" href="#single" style="text-decoration: none">Single</a></b></span>
+						<p style="text-align: center;"><span style="font-size: small;">
+							<b><a data-transition="none" href="#single" style="text-decoration: none">Single</a></b></span>
 						</p>
 					</div>
 				</div>
@@ -50,7 +51,8 @@
 
 
 					<div>
-						<p style="text-align: center;"><span style="font-size: small;"><b><a data-transition="none" href="#mitered" style="text-decoration: none">Mitered</a></b></span>
+						<p style="text-align: center;"><span style="font-size: small;">
+							<b><a data-transition="none" href="#mitered" style="text-decoration: none">Mitered</a></b></span>
 						</p>
 					</div>
 				</div>
@@ -136,7 +138,7 @@
 	<!-- Single Panel -->
 
 
-	<div data-role="page" data-theme="a" id="single">
+	<div data-role="page" data-theme="b" id="single">
 		<div data-role="header" data-theme="" data-position="fixed">
 			<h3>Single Panel</h3>
 			<a class="ui-btn-left" data-direction="reverse" data-icon="arrow-l" data-iconpos="left" data-role="button" data-transition="none" href="#page1">Back</a>
@@ -331,16 +333,18 @@
 
 				<div class="ui-grid-a">
 					<div class="ui-block-a" style="padding-right: 20px;">
+					<div>
+						<button class="ui-btn ui-corner-all ui-shadow">Set All</button>
+					</div>
+				</div>
+					
+					<div class="ui-block-b">
 						<label for="textinput16"></label> 
                         <input id="textinput16" name="" placeholder="" type="text" value="1/2&quot;">
 					</div>
 
 
-				<div class="ui-block-b">
-					<div>
-						<button class="ui-btn ui-corner-all ui-shadow">Set All</button>
-					</div>
-				</div>
+				
 				</div>
 
 
@@ -354,7 +358,7 @@
 		</div>
 
 
-		<div data-iconpos="top" data-role="tabs" data-theme="a">
+		
         <div data-role="navbar">
 			<ul>
 				<li>
@@ -367,13 +371,13 @@
 				</li>
 			</ul>
 		</div>
-        </div>
+        
 </div>
 
 	<!-- Mitered Panel -->
 
 
-	<div data-role="page" data-theme="a" id="mitered">
+	<div data-role="page" data-theme="b" id="mitered">
 		<div data-role="header" data-theme="" data-position="fixed">
 			<h3>Mitered Panel</h3>
 			<a class="ui-btn-left" data-direction="reverse" data-icon="arrow-l" data-iconpos="left" data-role="button" data-transition="none" href="#page1">Back</a> 
@@ -567,16 +571,17 @@
 
 				<div class="ui-grid-a">
 					<div class="ui-block-a" style="padding-right: 20px;">
+						<div>
+							<button class="ui-btn">Set All</button>
+						</div>
+					</div>
+					
+					<div class="ui-block-b">
 						<label for="textinput33"></label> 
                         <input id="textinput33" name="" placeholder="" type="text" value="1/2&quot;">
 					</div>
 
 
-					<div class="ui-block-b">
-						<div>
-							<button class="ui-btn">Set All</button>
-						</div>
-					</div>
 				</div>
 
 
@@ -590,7 +595,6 @@
 		</div>
 
 
-		<div data-iconpos="top" data-role="tabs" data-theme="a">
         <div data-role="navbar">
 			<ul>
 				<li>
@@ -603,7 +607,7 @@
 				</li>
 			</ul>
 		</div>
-        </div>
+   
 </div>
 	<script>
 	                      //App custom javascript
